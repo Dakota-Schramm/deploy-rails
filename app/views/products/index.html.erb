@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Products</h1>
+
+<div id="products" class="flex flex-col">
+  <% @products.each do |product| %>
+    <div class="flex">
+      <%= product["id"] %>
+      <span class="text-red-500"><%= product["name"] %></span>
+      <span class="text-blue-500"><%= product["description"] %></span>
+    </div>
+  <% end %>
+</div>
